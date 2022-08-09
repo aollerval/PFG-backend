@@ -25,6 +25,6 @@ public class Result {
 
     @Column()
     @ElementCollection
-    private List<String> answers;
+    private List<Integer> answers;
 
 }

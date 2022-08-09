@@ -1,5 +1,6 @@
 package com.aov.pfg.Services;
 
+import com.aov.pfg.Common.SubDimensions;
 import com.aov.pfg.Responses.QuestionResponse;
 import com.aov.pfg.Models.Question;
 import com.aov.pfg.Repositories.QuestionRepository;
@@ -25,8 +26,8 @@ public class QuestionService {
     }
 
     public ArrayList<Question> getAllQuestions() {
-        ArrayList<Question> questions = new ArrayList<Question>(questionRepository.findAll());
-        return questions;
+
+        return new ArrayList<Question>(questionRepository.findAll());
     }
 
     public Question getQuestionById(Long id){
