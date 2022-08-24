@@ -9,7 +9,7 @@ public enum Stages{
 
     private int value;
 
-    private Stages(int value) {
+    Stages(int value) {
         this.value = value;
     }
 
